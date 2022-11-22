@@ -1,0 +1,12 @@
+(cl:in-package test_rosbag-msg)
+(cl:export '(FIELD1-VAL
+          FIELD1
+          FIELD2-VAL
+          FIELD2
+          FIELD3-VAL
+          FIELD3
+          FIELD4-VAL
+          FIELD4
+          FIELD5-VAL
+          FIELD5
+))

@@ -1,0 +1,8 @@
+prefix=/home/ash/gripper_ws/devel
+
+Name: rosmsg
+Description: Description of rosmsg
+Version: 1.14.11
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

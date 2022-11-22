@@ -1,0 +1,8 @@
+prefix=/home/ash/gripper_ws/devel
+
+Name: test_rostopic
+Description: Description of test_rostopic
+Version: 1.14.11
+Cflags: -I/home/ash/gripper_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

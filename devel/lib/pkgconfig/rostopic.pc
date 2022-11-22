@@ -1,0 +1,8 @@
+prefix=/home/ash/gripper_ws/devel
+
+Name: rostopic
+Description: Description of rostopic
+Version: 1.14.11
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/ash/gripper_ws/devel
+
+Name: roscpp
+Description: Description of roscpp
+Version: 1.14.11
+Cflags: -I/home/ash/gripper_ws/devel/include -I/home/ash/gripper_ws/src/motionPlanning/ros_comm-melodic-devel/clients/roscpp/include -I/home/ash/gripper_ws/devel/include/ros -I/usr/include
+Libs: -L${prefix}/lib -lroscpp -lpthread /usr/lib/x86_64-linux-gnu/libboost_chrono.so /usr/lib/x86_64-linux-gnu/libboost_filesystem.so /usr/lib/x86_64-linux-gnu/libboost_system.so
+Requires: cpp_common message_runtime rosconsole roscpp_serialization roscpp_traits rosgraph_msgs rostime std_msgs xmlrpcpp

@@ -1,0 +1,8 @@
+prefix=/home/ash/gripper_ws/install
+
+Name: smach_viewer
+Description: Description of smach_viewer
+Version: 3.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: smach_ros smach_msgs

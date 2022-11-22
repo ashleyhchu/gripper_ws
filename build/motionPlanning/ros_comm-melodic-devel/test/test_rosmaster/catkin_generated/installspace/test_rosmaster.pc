@@ -1,0 +1,8 @@
+prefix=/home/ash/gripper_ws/install
+
+Name: test_rosmaster
+Description: Description of test_rosmaster
+Version: 1.14.11
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

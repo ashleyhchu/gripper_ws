@@ -1,0 +1,80 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ash/gripper_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_50ad5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_50ad5.dir/build.make CMakeFiles/cmTC_50ad5.dir/build
+make[1]: Entering directory '/home/ash/gripper_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_50ad5.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_50ad5.dir/CheckSymbolExists.c.o   -c /home/ash/gripper_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_50ad5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50ad5.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_50ad5.dir/CheckSymbolExists.c.o  -o cmTC_50ad5 
+CMakeFiles/cmTC_50ad5.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_50ad5.dir/build.make:97: recipe for target 'cmTC_50ad5' failed
+make[1]: *** [cmTC_50ad5] Error 1
+make[1]: Leaving directory '/home/ash/gripper_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_50ad5/fast' failed
+make: *** [cmTC_50ad5/fast] Error 2
+
+File /home/ash/gripper_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ash/gripper_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2253c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2253c.dir/build.make CMakeFiles/cmTC_2253c.dir/build
+make[1]: Entering directory '/home/ash/gripper_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2253c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_2253c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2253c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2253c.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_2253c.dir/CheckFunctionExists.c.o  -o cmTC_2253c -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_2253c.dir/build.make:97: recipe for target 'cmTC_2253c' failed
+make[1]: *** [cmTC_2253c] Error 1
+make[1]: Leaving directory '/home/ash/gripper_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2253c/fast' failed
+make: *** [cmTC_2253c/fast] Error 2
+
+
+Determining if the function trunc exists failed with the following output:
+Change Dir: /home/ash/gripper_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_80f91/fast"
+/usr/bin/make -f CMakeFiles/cmTC_80f91.dir/build.make CMakeFiles/cmTC_80f91.dir/build
+make[1]: Entering directory '/home/ash/gripper_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_80f91.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=trunc   -o CMakeFiles/cmTC_80f91.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘trunc’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.10/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_80f91
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80f91.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=trunc    -rdynamic CMakeFiles/cmTC_80f91.dir/CheckFunctionExists.c.o  -o cmTC_80f91 
+CMakeFiles/cmTC_80f91.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `trunc'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_80f91.dir/build.make:97: recipe for target 'cmTC_80f91' failed
+make[1]: *** [cmTC_80f91] Error 1
+make[1]: Leaving directory '/home/ash/gripper_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_80f91/fast' failed
+make: *** [cmTC_80f91/fast] Error 2
+
+

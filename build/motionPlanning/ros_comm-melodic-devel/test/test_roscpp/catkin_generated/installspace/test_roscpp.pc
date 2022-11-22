@@ -1,0 +1,8 @@
+prefix=/home/ash/gripper_ws/install
+
+Name: test_roscpp
+Description: Description of test_roscpp
+Version: 1.14.11
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime rosconsole rosgraph_msgs std_msgs xmlrpcpp

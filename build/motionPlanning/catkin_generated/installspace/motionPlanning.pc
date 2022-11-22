@@ -1,0 +1,8 @@
+prefix=/home/ash/gripper_ws/install
+
+Name: motionPlanning
+Description: Description of motionPlanning
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

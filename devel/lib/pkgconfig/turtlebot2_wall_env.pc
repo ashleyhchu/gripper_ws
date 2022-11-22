@@ -1,0 +1,8 @@
+prefix=/home/ash/gripper_ws/devel
+
+Name: turtlebot2_wall_env
+Description: Description of turtlebot2_wall_env
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

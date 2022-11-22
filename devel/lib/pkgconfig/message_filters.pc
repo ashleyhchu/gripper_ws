@@ -1,0 +1,8 @@
+prefix=/home/ash/gripper_ws/devel
+
+Name: message_filters
+Description: Description of message_filters
+Version: 1.14.11
+Cflags: -I/home/ash/gripper_ws/src/motionPlanning/ros_comm-melodic-devel/utilities/message_filters/include
+Libs: -L${prefix}/lib -lmessage_filters
+Requires: roscpp rosconsole

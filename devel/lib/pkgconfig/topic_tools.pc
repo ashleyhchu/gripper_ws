@@ -1,0 +1,8 @@
+prefix=/home/ash/gripper_ws/devel
+
+Name: topic_tools
+Description: Description of topic_tools
+Version: 1.14.11
+Cflags: -I/home/ash/gripper_ws/devel/include -I/home/ash/gripper_ws/src/motionPlanning/ros_comm-melodic-devel/tools/topic_tools/include
+Libs: -L${prefix}/lib -ltopic_tools
+Requires: message_runtime rosconsole roscpp std_msgs xmlrpcpp

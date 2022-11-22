@@ -1,0 +1,18 @@
+<launch>
+	<include file="$(find realsense2_camera)/launch/rs_rgbd.launch"		/>
+	<include file="$(find find_object_2d)/launch/find_object_3d.launch"	/>
+	<include file="$(find kinova_bringup)/launch/kinova_robot.launch"	/>
+	<include file="$(find j2n6s300_moveit_config)/launch/j2n6s300_demo.launch"	/>
+	<node pkg="rosserial_python" type="serial_node.py" name="rosarduino_node" args="_port:=/dev/ttyACM1 _baud:=115200"/>
+
+</launch>
+
+<!--
+roslaunch realsense2_camera rs_rgbd.launch
+roslaunch find_object_2d find_object_3d.launch
+
+roslaunch kinova_bringup kinova_robot.launch
+roslaunch j2n6s300_moveit_config j2n6s300_demo.launch
+
+rosrun rosserial_python serial_node.py _port:=/dev/ttyACM1 _baud:=115200
+ -->

@@ -1,0 +1,8 @@
+prefix=/home/ash/gripper_ws/devel
+
+Name: test_rosbag_storage
+Description: Description of test_rosbag_storage
+Version: 1.14.11
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

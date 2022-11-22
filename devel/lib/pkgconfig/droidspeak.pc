@@ -1,0 +1,8 @@
+prefix=/home/ash/gripper_ws/devel
+
+Name: droidspeak
+Description: Description of droidspeak
+Version: 0.1.0
+Cflags: -I/home/ash/gripper_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 
